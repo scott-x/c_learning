@@ -10,3 +10,8 @@ Target: x86_64-apple-darwin18.7.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 ```
+
+### recommand books
+- [learn-c](https://www.learn-c.org/en/)
+- [tutorialspoint](https://www.tutorialspoint.com/index.html)
+- [geeksforgeeks](https://www.geeksforgeeks.org/c-programming-language/)
