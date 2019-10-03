@@ -21,3 +21,5 @@ fclose(fp);
 ```
 
 以上代码有个bug，文件结尾会多出个`?`,[C语言复制文件内容时候最后多了个问号](https://zhidao.baidu.com/question/456304478.html)
+
+
