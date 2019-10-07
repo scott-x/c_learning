@@ -17,7 +17,8 @@ A pointer is essentially a simple integer variable which holds a memory address 
 
 The computer's memory is a sequential store of data, and a pointer points to a specific part of the memory. Our program can use pointers in such a way that the pointers point to a large amount of memory - depending on how much we decide to read from that point on.
 
-Strings as pointers
+### Strings as pointers： string的真身
+
 We've already discussed strings, but now we can dive in a bit deeper and understand what strings in C really are (which are called C-Strings to differentiate them from other strings when mixed with C++)
 
 The following line:

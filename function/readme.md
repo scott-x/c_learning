@@ -65,8 +65,8 @@ int runner() {
 
 int main()
 {
-    printf("%d ", runner());
-    printf("%d ", runner());
+    printf("%d ", runner()); //1
+    printf("%d ", runner()); //1
     return 0;
 }
 ```
@@ -84,8 +84,8 @@ int runner()
 
 int main()
 {
-    printf("%d ", runner());
-    printf("%d ", runner());
+    printf("%d ", runner()); //1
+    printf("%d ", runner()); //2
     return 0;
 }
 ```
