@@ -34,3 +34,9 @@ free(myperson);
 ### Exercise
 
 Use malloc to dynamically allocate a point structure.
+
+### [c语言动态数组](http://www.runoob.com/w3cnote/c-dynamic-array.html)
+
+分配原则：从外到内
+
+释放原则：从内到外
