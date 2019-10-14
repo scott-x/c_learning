@@ -2,7 +2,7 @@
 * @Author: scottxiong
 * @Date:   2019-10-07 22:05:48
 * @Last Modified by:   scottxiong
-* @Last Modified time: 2019-10-07 23:15:51
+* @Last Modified time: 2019-10-14 14:22:58
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -52,7 +52,7 @@ int shift(node_t **head){
      }
 
      next_node = (*head)->next;
-     retval = (*head)->val;
+     retval = (*head)->value;
      free(*head);
      *head = next_node;
 
@@ -63,7 +63,7 @@ int pop(node_t *head){
    int retval = 0;
     /* if there is only one item in the list, remove it */
     if (head->next == NULL) {
-        retval = head->val;
+        retval = head->value;
         free(head);
         return retval;
     }
@@ -75,7 +75,7 @@ int pop(node_t *head){
     }
 
     /* now current points to the second to last item of the list, so let's remove current->next */
-    retval = current->next->val;
+    retval = current->next->value;
     free(current->next);
     current->next = NULL;
     return retval;
@@ -99,6 +99,12 @@ int main(int argc, char const *argv[])
     printf("after unshift:\n");
     unshift(&head,4);
     printNodes(head);
+    printf("after shift:\n");
+    shift(&head);
+    printNodes(head);
+    printf("after pop:\n");
+    pop(head);
+    printNodes(head);
 	  return 0;
 }
 
@@ -115,4 +121,12 @@ after unshift:
 1
 2
 3
+after shift:
+1
+2
+3
+after pop:
+1
+2
+
 */
